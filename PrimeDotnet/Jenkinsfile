@@ -22,7 +22,7 @@ pipeline {
     stage('Nuget Restore') {
       steps {
         bat label: 'Nuget Restore',        
-          bat 'dotnet restore "PrimeDotnet\\prime-dotnet.sln"'
+          bat 'dotnet restore \"PrimeDotnet\\prime-dotnet.sln"'
           
       }
     }
