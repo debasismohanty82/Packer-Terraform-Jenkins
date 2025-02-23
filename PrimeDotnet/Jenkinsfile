@@ -21,11 +21,9 @@ pipeline {
     
     stage('Nuget Restore') {
       steps {
-        bat label: 'Nuget Restore', 
-        script: '''
+        bat label: 'Nuget Restore',        
           bat 'dotnet restore "PrimeDotnet\\prime-dotnet.sln"'
-          echo "Nuget Done Starting Msbuild *************"
-        ''' 
+          
       }
     }
 
